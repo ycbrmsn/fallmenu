@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>菜单demo</title>
+  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.color-2.1.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.resizediv.js"></script>
+  <script type="text/javascript" src="js/jquery.fallmenu-1.0.6.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/fallmenu-1.0.6.css">
+  <style type="text/css">
+    body {
+      margin: 20px; background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <div class="fallmenu" id="fallmenu"></div>
+  <script type="text/javascript">
+    var data = [
+      {
+        title: '首页',
+        level: 'first'
+      },
+      {
+        title: '栏目项一',
+        level: 'first',
+        url: '',
+        children: [
+          {
+            title: '栏目项一一',
+            level: 'second',
+            url: '',
+            children: [
+              {
+                title: '栏目项一一一',
+                level: 'third',
+                url: ''
+              }
+            ]
+          },
+          {
+            title: '栏目项二二',
+            level: 'second',
+            url: '',
+            children: [
+              {
+                title: '栏目项二二二',
+                level: 'third',
+                url: ''
+              }
+            ]
+          },
+          {
+            title: '栏目项三三',
+            level: 'second',
+            url: '',
+            children: [
+              {
+                title: '栏目项三三三',
+                level: 'third',
+                url: ''
+              }
+            ]
+          },
+          {
+            title: '栏目项四四',
+            level: 'second',
+            url: '',
+            children: [
+              {
+                title: '栏目项四四四',
+                level: 'third',
+                url: ''
+              }
+            ]
+          },
+          {
+            title: '栏目项五五',
+            level: 'second',
+            url: '',
+            children: [
+              {
+                title: '栏目项五五五',
+                level: 'third',
+                url: ''
+              }
+            ]
+          },
+          {
+            title: '栏目项六六',
+            level: 'second',
+            url: '',
+            children: [
+              {
+                title: '栏目项六六六',
+                level: 'third',
+                url: ''
+              }
+            ]
+          },
+          {
+            title: '栏目项七七',
+            level: 'second',
+            url: '',
+            children: [
+              {
+                title: '栏目项七七七',
+                level: 'third',
+                url: ''
+              }
+            ]
+          },
+          {
+            title: '栏目项八八',
+            level: 'second',
+            url: '',
+            children: [
+              {
+                title: '栏目项八八八',
+                level: 'third',
+                url: ''
+              }
+            ]
+          }
+        ]
+      },
+      {
+        title: '栏目项二',
+        level: 'first',
+        children: [
+          {
+            title: '《标题说明书》',
+            level: 'second'
+          }
+        ]
+      },
+      {
+        title: '栏目项三',
+        level: 'first'
+      },
+      {
+        title: '栏目项四',
+        level: 'first'
+      },
+      {
+        title: '栏目项五',
+        level: 'first'
+      },
+      {
+        title: '栏目项六',
+        level: 'first'
+      },
+      {
+        title: '栏目项七',
+        level: 'first'
+      },
+      {
+        title: '栏目项八',
+        level: 'first'
+      },
+      {
+        title: '栏目项九',
+        level: 'first'
+      },
+      {
+        title: '栏目项十',
+        level: 'first'
+      },
+      {
+        title: '栏目项十一',
+        level: 'first'
+      },
+      {
+        title: '栏目项十二',
+        level: 'first'
+      }
+    ];
+    $("#fallmenu").fallmenu({
+      subMenuItemMaxChineseChars: 5,
+      data: data
+    });
+
+  </script>
+</body>
+</html>
